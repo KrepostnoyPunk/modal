@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
+    background: linear-gradient(to right, #283048, #859398);
+}
+
+.btn{
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 4px 4px 0 0 #48e0e0;
+    transition-duration: .3s;
+    font-size: 20px;
+}
+
+.btn:hover{
+    scale: 1.05;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.modal__bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(25,25,25,.3);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+}
+
+.modal{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    background-color: rgb(25,25,25);
+    z-index: 100;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cross-btn{
+    content: 'cross';
+    position: relative;
+    right: -36%;
+    top: -45%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    transition-duration: .3s;
+}
+
+.cross-btn:hover{
+    color: #48e0e0;
+    cursor: pointer;
+}
