@@ -11,7 +11,7 @@ function showModal(){
     modalBgEl.classList.add('modal__bg')
     bodyEl.prepend(modalBgEl)
 
-    modalEl.innerHTML = `<h1>MODAL</h1>`
+    modalEl.innerHTML = `<h1>😈</h1>`
     modalEl.classList.add('modal')
     modalBgEl.prepend(modalEl)
 
@@ -33,4 +33,10 @@ modalTriggerEl.addEventListener('click', e => {
 
 crossBtnEl.addEventListener('click', e => {
     closeModal()
+})
+
+modalBgEl.addEventListener('click', e => {
+    if(e.target === modalBgEl){
+        closeModal()
+    }
 })

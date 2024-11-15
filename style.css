@@ -35,15 +35,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 101;
+    z-index: 1;
 }
 
 .modal{
     width: 600px;
     height: 400px;
-    position: absolute;
+    position: relative;
     background-color: rgb(25,25,25);
-    z-index: 100;
     border-radius: 10px;
     color: #fff;
     display: flex;
@@ -52,10 +51,10 @@ body{
 }
 
 .cross-btn{
-    content: 'cross';
-    position: relative;
-    right: -36%;
-    top: -45%;
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 5px;
     width: 28px;
     height: 28px;
     display: flex;
